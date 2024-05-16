@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+@import url(./variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+:is(input.form-control, textarea.form-control, select.form-control):focus {
+    box-shadow: none;
+    border-color: var(--brand-color) !important;
+}
+
+main {
+    margin-left: 22rem;
+}
+
+.modal-body fieldset:not(fieldset:first-child) {
+    margin-top: var(--spacing-7);
+}
+
+.saudacao {
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-9);
+}
+.saudacao__titulo {
+    color: var(--brand-color);
+    font-size: var(--fontSize-4xl);
+    font-weight: var(--fontWeight-bold);
+}
